@@ -6,7 +6,7 @@ This repository contains a Data Science project focused on predicting residentia
 To build a regression model that accurately estimates house prices based on structural features, while enriching the original dataset with calculated business rules such as geographical location advantages and property depreciation over time.
 
 ## Project Structure
-```text
+    
 property-price-prediction/
      |- dataset/
            |- kc_house_data.csv
