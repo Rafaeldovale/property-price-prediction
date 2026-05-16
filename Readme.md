@@ -29,7 +29,7 @@ property-price-prediction/
 
 [x] Data Visualization: Analyzed correlation and plotted price behavior against location and renovation status.
 
-Next Steps
+### Next Steps
 [ ] Investigate missing/null values and perform formal data cleaning.
 
 [ ] Analyze target variable distribution (Price skewness).
