@@ -61,10 +61,15 @@ To clone this repository and run the notebook locally, follow these steps in you
 ## Phase 1: Exploration & Feature Engineering
 
 [x] Set up the local virtual environment and folder structure.
+
 [x] Handle initial data ingestion and datetime conversions.
+
 [x] Feature Engineering: Created house_age to measure property depreciation.
+
 [x] Feature Engineering: Implemented the Haversine Formula to calculate dist_center (distance in km from Seattle's city center).
+
 [x] Feature Engineering: Created is_renovated to isolate the impact of modernizations.
+
 [x] Data Visualization: Analyzed price distribution, identified market outliers via Boxplots, and exported all plots to the /images directory.
 
 ## Phase 2: Model Training & Evaluation (Benchmark)
@@ -74,17 +79,20 @@ a baseline linear approach to advanced tree-based ensemble methods.
 Performance Results:
 . Linear Regression (Baseline): * MAE: $120,230.17 | R² Score: 73.12%
 
-      . Verdict: Too rigid to capture non-linear patterns of the real estate market.
+      Verdict: Too rigid to capture non-linear patterns of the real estate market.
 
 . Random Forest Regressor: * MAE: $70,355.47 | R² Score: 88.79%
 
-      . Verdict: Winner in average error reduction (MAE). The ensemble of 100 decision trees mapped property segments brilliantly.
+      Verdict: Winner in average error reduction (MAE). The ensemble of 100 decision trees mapped property segments brilliantly.
 
 . XGBoost Regressor (Optimized): * MAE: $73,932.27 | R² Score: 88.81%
 
-      . Verdict: Highest explained variance (R²), but slightly more sensitive to extreme market luxury outliers than Random Forest.
+      Verdict: Highest explained variance (R²), but slightly more sensitive to extreme market luxury outliers than Random Forest.
 
 [x] Split data into Training (80%) and Testing (20%) sets to avoid data leakage.
+
 [x] Train and evaluate Linear Regression baseline.
+
 [x] Implement Random Forest Regressor and slash the average error by $50k.
+
 [x] Tune and optimize XGBoost Regressor hyperparameters to handle data types and avoid overfitting.
